@@ -73,6 +73,14 @@ ul{
     font-weight: bold;
   }
 
+  .dark{
+      padding: 15px;
+      background: darkslategray;
+      color: floralwhite;
+      margin-top: 10px;
+      margin-bottom: 10px;
+  }
+
 
 /*Header*/
 header{
@@ -242,11 +250,49 @@ align-items: center;
         height: unset;
     }
 
+    /*sidebar*/
+    aside#sidebar{
+    font-size: 15px;
+    float: right;
+    width: 30%;
+    margin-top: 10px;
+    }
+
+  
+
+    /*main-menu*/
+    article#main-menu{
+        font-size: 15px;
+        float: left;
+        width: 65%;
+    }
+
+    /*services*/
+
+    ul#services li{
+    font-size: 15px;   
+    font-style: italic; 
+    font-weight: bold;
+    color: whitesmoke;
+    list-style: none;
+    padding: 20px;
+    border: mediumturquoise solid 1px;
+    margin-bottom: 5px;
+    background: teal;
+    }
+
+    iframe{
+        margin-top: 100px;
+        margin-left: 450px;
+        width: 50%;
+    }
+
     footer{
         padding: 20px;
-        margin-top: 20px;
+        margin-top: 450px;
         color: whitesmoke;
         background-color: cadetblue ;
         text-align: center;
         font-size: 15px;
     }
+
