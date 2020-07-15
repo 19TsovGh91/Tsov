@@ -134,10 +134,11 @@ font-weight: bold;
 /* Showcase*/
 
 #showcase{
+
 min-height:500px;
 width: 100%;
 background: url(../Tsov/image/seafood-chalkboard.png) -100px;
-background-position: center;
+background-position: absolute, no-repeat;
 align-content: center;
 text-align: center;
 color: rgb(246, 248, 248);
@@ -195,8 +196,9 @@ padding: 20px;
 }
 
 #boxes .box img{
-width: 90px; 
-   
+width: 90px;
+min-height: fit-content; 
+border-radius: 100%;   
 }
 
 #boxes .box h3{
