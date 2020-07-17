@@ -1,3 +1,6 @@
-int tiv1 = 75135887;
+let tiv1 = 8 ;
+let tiv2 = 56 ;
 
-console.log(tiv1[7]);
+
+console.log(tiv1 + tiv2) ;
+
