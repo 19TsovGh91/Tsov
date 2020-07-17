@@ -1,2 +1,3 @@
-let mynum = 789523254;
-console.log(mynum[8]);
+int tiv1 = 75135887;
+
+console.log(tiv1[7]);
