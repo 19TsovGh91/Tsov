@@ -1,0 +1,25 @@
+.button--1{
+margin-top: 25px;
+margin-bottom: 25px;
+height: 38px;    
+background: center;
+background-color: grey;
+border: none;
+padding-left: 20px;
+padding-right: 20px;
+color: aliceblue;
+font-weight: bold;
+}
+
+
+.button2{
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 38px;
+    background: grey;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: aliceblue;
+    font-weight: bold;
+}

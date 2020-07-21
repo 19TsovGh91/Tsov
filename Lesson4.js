@@ -1,14 +1,28 @@
-function greet () {
-    console.log('hello my friend');
+//Creating my converter
+
+const changeDeg = () =>{
+    const cv = document.getElementById('cd').value;
+
+    let fd = cv *1.8+32;
+
+    let result = document.getElementById('fd').value;
+
+    console.log(fd);
+
+    document.getElementById('fd').value = fd;
 }
 
-greet();
+const changeDeg2 = () =>{
+    const fv = document.getElementById('fd2').value;
 
-a=85;
-b=62;
-sum= a + b;
+    let cd2 = (fv -32)*5/9;
 
-console.log(sum);
+    let result = document.getElementById('cd2').value;
+
+    console.log(cd2);
+
+    document.getElementById('cd2').value = cd2;
+}
 
 // 1. 
 
@@ -56,3 +70,17 @@ if(aa> bb && aa > cc){
 else {
     console.log(cc)
 };
+
+// 6. 
+
+let myTiv = 79;
+
+if(myTiv % 2 !==0){
+
+   console.log('Odd')
+           
+} else{
+    console.log('Even')
+};
+
+
