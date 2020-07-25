@@ -48,14 +48,14 @@ console.log(tempDegreeF = tempDegreeC * 1.8 +32);
 
 //4.
 
-let tiv3 = 8;
+/*let tiv3 = 8;
 let tiv4 = 16;
 
 if (tiv3 % tiv4 ==0 || tiv4 % tiv3 ==0){
     alert(1)
 } else{
     alert(0)
-};
+};*/
 
 //5.
 
