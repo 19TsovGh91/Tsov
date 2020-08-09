@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--1 task Write a JavaScript program to count and display the items of a dropdown list(select tag options)-->
+    <div class="container" style="text-align: center;">
+        <h3>Sleect Item</h3>
+        <select>
+            <option diabeled hidden selected>Select Item</option>
+            <option value="banana">Banana</option>
+            <option value="cherry">Cherry</option>
+            <option value="starwberry">Strawberry</option>
+            <option value="blueberry">Blueberry</option>
+            <option value="mango">Mango</option>
+            <option value="avocado">Avocado</option>
+        </select>
+        <h1>Result</h1>
+        <script>
+        let selection = document.querySelector('select');
+        let result = document.querySelector('h1');
+
+        selection.addEventListener('change',() => {
+        result.innerText = selection.options[selection.selectedIndex].text;
+        console.log(selection.selectedIndex);
+        });
+        </script>
+    </div>
+    <hr>
+    <!--2 task Write a JavaScript program to set the background color of a paragraph from an input type= color-->
+    <div class="container" style="text-align: center;">
+    <h1>Change the Color</h1>
+    <input type="text" id="colorInputText">
+    <input type="color" id="colorInputColor">
+    <input type="button" id="colorButton" value="Click if you want to change the color"
+     onclick="changeColor()">
+
+    </div>
+    <script>
+        function changeColor() {
+            let color = document.getElementById('colorInputColor').value;
+            document.body.style.backgroundColor = color;
+            document.getElementById('colorInputText').value = color;
+        }
+    </script>
+    <hr>
+    
+ 
+    
+<!--4 taks Write a JavaScript function to add "LI" to a list element "UL"-->
+<div class="container" style="text-align: center;">
+    <div class="row">
+        <div class="col-12">
+            <h3>Add and Remove Elements</h3>
+            <br>
+            <br>
+            <div class="input-group">
+                <input type="text" class="from-control" id="candidate">
+                <div class="input-group-append">
+                    <br>
+                    <button onclick="addItem()" class="btn btn-add" type="button">Add Item</button>
+                    <button onclick="removeItem()" class="btn btn-remove" type="button">Remove Item</button>
+                </div>
+            </div>
+            <ul id="dynamic-list">
+               
+            </ul>
+        </div>
+    </div>
+</div>
+
+<script>
+    function addItem() {
+  
+
+        let ul = document.getElementById('dynamic-list');
+        let candidate = document.getElementById('candidate');
+        let li = document.createElement('li');
+        li.setAttribute('id', candidate.value);
+        li.appendChild (document.createTextNode(candidate.value));
+        ul.appendChild (li);
+    }
+
+    function removeItem() {
+      let ul = document.getElementById("dynamic-list");
+      let candidate = document.getElementById("candidate");
+      let item = document.getElementById(candidate.value);
+      ul.removeChild(item);
+  }
+
+
+</script>
+
+<hr>
+
+<!--5 task Write a JavaScript function that would set the even li tags font color to red and the odd to green in ul--> 
+
+<!--3 task Write a JavaScript function to get the value of the "a" href attribute and change it to another one.-->
+
+<!--6 task Write a JavaScript program to get the width and height of the window (any time the window is resized)-->
+
+
+
+    
+</body>
+
+
+<script src="../Tsov/Lessons/lesson7.js"></script>
+
+</html>
